@@ -1,2 +1,3 @@
 # github-example
-Same
+
+This is a sample repo
