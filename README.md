@@ -1,3 +1,4 @@
-# github-example
+# Docker flask application
 
-This is a sample repo
+- This application is written in python
+- It shall be deployed on GKE
