@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: gcp-devops-gke
-        image: gcr.io/kodekloud-gcp-training/test-gcpdevops:latest
+        image: gcr.io/kodekloud-gcp-training/gcpdevops-dev:latest
         ports:
         - containerPort: 5000
         env:
@@ -25,7 +25,7 @@ apiVersion: "v1"
 kind: "Service"
 metadata:
   name: "gcp-devops-gke-service"
-  namespace: "gcp-devops-prod"
+  namespace: "gcp-devops-dev"
   labels:
     app.kubernetes.io/managed-by: "gcp-cloud-build-deploy"
 spec:
