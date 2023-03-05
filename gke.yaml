@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: gcp-devops-gke
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: gcp
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: gcp-devops-gke
-        image: gcr.io/kodekloud-gcp-training/test-gcpdevops:latest
+        image: gcr.io/kodekloud-gcp-training/gcpdevops:latest
         ports:
         - containerPort: 5000
         env:
